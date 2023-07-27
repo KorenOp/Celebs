@@ -1,0 +1,72 @@
+[
+    {
+        "name": "John Doe",
+        "birthDate": "1990-01-01",
+        "gender": "Male",
+        "role": "Software Engineer",
+        "image": "https://example.com/path-to-image1.jpg"
+    },
+    {
+        "name": "Jane Doe",
+        "birthDate": "1991-02-02",
+        "gender": "Female",
+        "role": "Product Manager",
+        "image": "https://example.com/path-to-image2.jpg"
+    },
+    {
+        "name": "Alex Smith",
+        "birthDate": "1992-03-03",
+        "gender": "Male",
+        "role": "Data Scientist",
+        "image": "https://example.com/path-to-image3.jpg"
+    },
+    {
+        "name": "Alice Johnson",
+        "birthDate": "1993-04-04",
+        "gender": "Female",
+        "role": "UX Designer",
+        "image": "https://example.com/path-to-image4.jpg"
+    },
+    {
+        "name": "Bob Brown",
+        "birthDate": "1994-05-05",
+        "gender": "Male",
+        "role": "System Analyst",
+        "image": "https://example.com/path-to-image5.jpg"
+    },
+    {
+        "name": "Betty Davis",
+        "birthDate": "1995-06-06",
+        "gender": "Female",
+        "role": "Business Analyst",
+        "image": "https://example.com/path-to-image6.jpg"
+    },
+    {
+        "name": "Charlie Miller",
+        "birthDate": "1996-07-07",
+        "gender": "Male",
+        "role": "Network Engineer",
+        "image": "https://example.com/path-to-image7.jpg"
+    },
+    {
+        "name": "Chloe Wilson",
+        "birthDate": "1997-08-08",
+        "gender": "Female",
+        "role": "Database Administrator",
+        "image": "https://example.com/path-to-image8.jpg"
+    },
+    {
+        "name": "David Moore",
+        "birthDate": "1998-09-09",
+        "gender": "Male",
+        "role": "DevOps Engineer",
+        "image": "https://example.com/path-to-image9.jpg"
+    },
+    {
+        "name": "Daisy Taylor",
+        "birthDate": "1999-10-10",
+        "gender": "Female",
+        "role": "Quality Assurance Engineer",
+        "image": "https://example.com/path-to-image10.jpg"
+    }
+]
