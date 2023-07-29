@@ -1,22 +1,25 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import MockCelebs from './assets/MockCelebs.json';
 import RecipeReviewCard from './Card/Card';
+import useGetRequest from './hooks/useGetRequest';
 
-interface Person {
+
+interface PokemonData {
   name: string;
-  birthDate: string;
-  gender: string;
-  role: string;
-  image: string;
+  abilities: string[];
+  // Add other properties from the API response if needed
 }
 
 function App() {
+  const { data, loading, error } = useGetRequest<PokemonData>('https://pokeapi.co/api/v2/pokemon/ditto');
+
+  console.log(data, loading, error);
 
   return (
     <>
       <div className="main-holder">
-        <div className='main-headline'> Celebs</div>
+        <div className='main-headline'>Celebs</div>
         <div className='card-holder'>
           {MockCelebs.map((celeb, index) => (
             <RecipeReviewCard
