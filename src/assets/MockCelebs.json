@@ -11,14 +11,14 @@
         "birthDate": "1991-02-02",
         "gender": "Female",
         "role": "Product Manager",
-        "image": "https://example.com/path-to-image2.jpg"
+        "image": "https://www.imdb.com//name/nm0000136/mediaviewer/rm4061373441/?ref_=nm_ov_ph"
     },
     {
         "name": "Alex Smith",
         "birthDate": "1992-03-03",
         "gender": "Male",
         "role": "Data Scientist",
-        "image": "https://example.com/path-to-image3.jpg"
+        "image": "https://m.media-amazon.com/images/M/MV5BOTBhMTI1NDQtYmU4Mi00MjYyLTk5MjEtZjllMDkxOWY3ZGRhXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_QL75_UY207_CR1,0,140,207_.jpg"
     },
     {
         "name": "Alice Johnson",
