@@ -1,45 +1,27 @@
-import { useEffect, useState } from "react";
-import axios, { AxiosResponse } from "axios";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-// Define the type for the API response data
-type ApiResponse<T> = {
-	data: T | null;
-	loading: boolean;
-	error: string | null;
+const useGetRequest = <T>(url: string) => {
+  const [data, setData] = useState<T[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get<T[]>(url);
+        setData(response.data);
+        setLoading(false);
+      } catch (error) {
+        setError('Error fetching data');
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [url]);
+
+  return { Data: data, loading, error };
 };
-
-// Create the custom hook
-function useGetRequest<T>(url: string): ApiResponse<T> {
-	const [data, setData] = useState<T | null>(null);
-	const [loading, setLoading] = useState<boolean>(true);
-	const [error, setError] = useState<string | null>(null);
-
-	useEffect(() => {
-		let isMounted = true;
-
-		const fetchData = async () => {
-			try {
-				const response: AxiosResponse<T> = await axios.get(url);
-				if (isMounted) {
-					setData(response.data);
-					setLoading(false);
-				}
-			} catch (error) {
-				if (isMounted) {
-					setError("Error fetching data.");
-					setLoading(false);
-				}
-			}
-		};
-
-		fetchData();
-
-		return () => {
-			isMounted = false;
-		};
-	}, [url]);
-
-	return { data, loading, error };
-}
 
 export default useGetRequest;
